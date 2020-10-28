@@ -14,8 +14,8 @@ class MyApp extends Component {
 }
 
 Logout = () => {
-    sessionStorage.setItem('isLogin','')
-    sessionStorage.clear()
+    localStorage.setItem('isLogin','')
+    localStorage.clear()
     this.setState({
         login:false
     })
@@ -23,7 +23,7 @@ Logout = () => {
 }
 
 componentDidMount = () => {
-    if (!sessionStorage.getItem('isLogin')) {
+    if (!localStorage.getItem('isLogin')) {
       return( Router.push('/login') )
     }
 }
