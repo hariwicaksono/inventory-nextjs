@@ -27,9 +27,7 @@ componentDidMount = () => {
       return( Router.push('/login') )
     }
 }
-static getInitialProps({ pathname }){
-  return { pathname }
- }
+
   render() {
     const { Component, pageProps } = this.props;
 

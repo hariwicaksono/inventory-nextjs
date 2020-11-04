@@ -19,7 +19,7 @@ class Layout extends Component {
     this.setState({ showMenu: !this.state.showMenu });
   }
   render() {
-    const { children } = this.props;
+    const { children, home } = this.props;
 
   return (
     <>

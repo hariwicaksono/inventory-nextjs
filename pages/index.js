@@ -3,12 +3,12 @@ import Layout, {siteTitle} from '../components/layout';
  
 export default function Home() {
   return (
-    <div>
+    <Layout home>
       <Head>
       <title>{siteTitle}</title>
       </Head>
 
-      <Layout>
+     
       <main>
         <h1>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -59,6 +59,6 @@ export default function Home() {
         </a>
       </footer>
       </Layout>
-    </div>
+
   )
 }

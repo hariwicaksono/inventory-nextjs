@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Head from 'next/head';
 import Router from 'next/router';
-import {siteName} from '../components/layout';
+import Layout, {siteName} from '../components/layout';
 import {Container, Card, Row, Col, Spinner, Button, Form} from 'react-bootstrap';
 import API from '../libs/axios'
 import { toast } from 'react-toastify';
@@ -21,7 +21,7 @@ class Login extends Component {
 }
   render() {
   return (
-    <div>
+    <Layout>
       <Head>
         <title>Login - {siteName}</title>
       </Head>
@@ -96,7 +96,7 @@ class Login extends Component {
 
       
     </main>
-    </div>
+    </Layout>
   );
   }
 }
