@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Route from 'next/router';
+import Sidebar from './sidebar';
 import {Container, Form,Button, Navbar, Nav, NavItem, NavDropdown} from 'react-bootstrap'
 
 class MyNavbar extends Component {
@@ -52,16 +53,7 @@ class MyNavbar extends Component {
             </div>
             </header>
             <div className="aside-menu overflow-hidden">
-
-            <nav id="stacked-menu" className="stacked-menu">
-             
-              <ul className="menu">
-           
-                <li className="menu-item has-active">
-                  <a href="index.html" className="menu-link"><span className="menu-icon fas fa-home"></span> <span className="menu-text">Dashboard</span></a>
-                </li>
-                </ul>
-                </nav>
+          <Sidebar />
             </div>
             
             </div>
