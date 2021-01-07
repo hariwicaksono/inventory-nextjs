@@ -21,7 +21,7 @@ class Login extends Component {
 }
   render() {
   return (
-    <Layout>
+    <Layout login>
       <Head>
         <title>Login - {siteName}</title>
       </Head>
